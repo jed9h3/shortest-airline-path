@@ -31,7 +31,7 @@ public class Driver extends Application {
     public void start(Stage primaryStage) throws Exception {
         File file = new File("Cities.txt");
         Scanner input = new Scanner(file);
-        ImageView mapimg = new ImageView(new Image("file:map.png"));
+        ImageView mapimg = new ImageView(new Image("file:imgs/map.png"));
         VBox sidevbox = new VBox(100);
         HBox bottomhbox = new HBox(80);
         HBox vbox1 = new HBox(10);
@@ -104,7 +104,7 @@ public class Driver extends Application {
         typeop[0] = " ";
         for (int i = 0; i < vcount; i++) {
             temp = input.nextLine().split(" ");
-            ImageView pickie = new ImageView(new Image("file:mcircle.png"));
+            ImageView pickie = new ImageView(new Image("file:imgs/mcircle.png"));
             te = translateCoordinates(Double.parseDouble(temp[1]),
                     Double.parseDouble(temp[2]));
             layout.getChildren().add(pickie);
@@ -118,7 +118,7 @@ public class Driver extends Application {
             pickie.setOnMouseClicked(ei -> {
                 if ((sourceCb.getSelectionModel().isEmpty() || sourceCb.getValue().compareTo(" ") == 0)
                         || (targetCb.getSelectionModel().isEmpty() || targetCb.getValue().compareTo(" ") == 0)
-                        || (pickie.getImage().getUrl().compareTo("file:mcircle.png") != 0)) {
+                        || (pickie.getImage().getUrl().compareTo("file:imgs/mcircle.png") != 0)) {
                     if (sourceCb.getSelectionModel().isEmpty() || sourceCb.getValue().compareTo(" ") == 0) {
                         for (int u = 0; u < table.length; u++) {
                             if ((table[u].vertix.xie) == (pickie.getX() + 8)
@@ -127,7 +127,7 @@ public class Driver extends Application {
                                 break;
                             }
                         }
-                    } else if (pickie.getImage().getUrl().compareTo("file:redpick.png") == 0) {
+                    } else if (pickie.getImage().getUrl().compareTo("file:imgs/redpick.png") == 0) {
                         sourceCb.setValue(" ");
                     } else {
                         if (targetCb.getSelectionModel().isEmpty() || targetCb.getValue().compareTo(" ") == 0) {
@@ -160,7 +160,7 @@ public class Driver extends Application {
                 if (layout.getChildren().get(f) instanceof ImageView) {
                     if (((ImageView) layout.getChildren().get(f))
                             .getImage().getUrl().compareTo("file:reddpick.png") == 0) {
-                        ((ImageView) layout.getChildren().get(f)).setImage(new Image("file:mcircle.png"));
+                        ((ImageView) layout.getChildren().get(f)).setImage(new Image("file:imgs/mcircle.png"));
                     }
                 }
             }
@@ -179,12 +179,12 @@ public class Driver extends Application {
                     sourceCb.getValue().compareTo(" ") == 0) {
                 for (int k = 0; k < layout.getChildren().size(); k++) {
                     if (layout.getChildren().get(k) instanceof ImageView && ((ImageView) layout.getChildren().get(k))
-                            .getImage().getUrl().compareTo("file:redpick.png") == 0) {
+                            .getImage().getUrl().compareTo("file:imgs/redpick.png") == 0) {
                         ((ImageView) layout.getChildren().get(k))
                                 .setX(((ImageView) layout.getChildren().get(k)).getX() + 15 - 8);
                         ((ImageView) layout.getChildren().get(k))
                                 .setY(((ImageView) layout.getChildren().get(k)).getY() + 30 - 8);
-                        ((ImageView) layout.getChildren().get(k)).setImage(new Image("file:mcircle.png"));
+                        ((ImageView) layout.getChildren().get(k)).setImage(new Image("file:imgs/mcircle.png"));
                         break;
                     }
                 }
@@ -194,19 +194,19 @@ public class Driver extends Application {
                         for (int l = 0; l < layout.getChildren().size(); l++) {
                             if (layout.getChildren().get(l) instanceof ImageView) {
                                 if (((ImageView) layout.getChildren().get(l)).getImage().getUrl()
-                                        .compareTo("file:redpick.png") == 0) {
+                                        .compareTo("file:imgs/redpick.png") == 0) {
                                     ((ImageView) layout.getChildren().get(l))
                                             .setX(((ImageView) layout.getChildren().get(l)).getX() + 15 - 8);
                                     ((ImageView) layout.getChildren().get(l))
                                             .setY(((ImageView) layout.getChildren().get(l)).getY() + 30 - 8);
-                                    ((ImageView) layout.getChildren().get(l)).setImage(new Image("file:mcircle.png"));
+                                    ((ImageView) layout.getChildren().get(l)).setImage(new Image("file:imgs/mcircle.png"));
                                 }
                             }
                         }
                         for (int l = 0; l < layout.getChildren().size(); l++) {
                             if (layout.getChildren().get(l) instanceof ImageView) {
                                 if (((ImageView) layout.getChildren().get(l))
-                                        .getImage().getUrl().compareTo("file:mcircle.png") == 0) {
+                                        .getImage().getUrl().compareTo("file:imgs/mcircle.png") == 0) {
                                     if (((ImageView) layout.getChildren().get(l)).getX() + 8 == table[k].vertix.xie
                                             && ((ImageView) layout.getChildren().get(l)).getY()
                                                     + 8 == table[k].vertix.yie) {
@@ -215,7 +215,7 @@ public class Driver extends Application {
                                         ((ImageView) layout.getChildren().get(l))
                                                 .setY(((ImageView) layout.getChildren().get(l)).getY() + 8 - 30);
                                         ((ImageView) layout.getChildren().get(l))
-                                                .setImage(new Image("file:redpick.png"));
+                                                .setImage(new Image("file:imgs/redpick.png"));
                                         break;
                                     }
                                 } else {
@@ -224,7 +224,7 @@ public class Driver extends Application {
                                                     + 30 == table[k].vertix.yie) {
 
                                         ((ImageView) layout.getChildren().get(l))
-                                                .setImage(new Image("file:redpick.png"));
+                                                .setImage(new Image("file:imgs/redpick.png"));
                                         targetCb.setValue(" ");
                                         break;
                                     }
@@ -241,7 +241,7 @@ public class Driver extends Application {
                 if (layout.getChildren().get(f) instanceof ImageView) {
                     if (((ImageView) layout.getChildren().get(f))
                             .getImage().getUrl().compareTo("file:reddpick.png") == 0) {
-                        ((ImageView) layout.getChildren().get(f)).setImage(new Image("file:mcircle.png"));
+                        ((ImageView) layout.getChildren().get(f)).setImage(new Image("file:imgs/mcircle.png"));
                     }
                 }
             }
@@ -258,12 +258,12 @@ public class Driver extends Application {
                     targetCb.getValue().compareTo(" ") == 0) {
                 for (int k = 0; k < layout.getChildren().size(); k++) {
                     if (layout.getChildren().get(k) instanceof ImageView && ((ImageView) layout.getChildren().get(k))
-                            .getImage().getUrl().compareTo("file:bluepick.png") == 0) {
+                            .getImage().getUrl().compareTo("file:imgs/bluepick.png") == 0) {
                         ((ImageView) layout.getChildren().get(k))
                                 .setX(((ImageView) layout.getChildren().get(k)).getX() + 15 - 8);
                         ((ImageView) layout.getChildren().get(k))
                                 .setY(((ImageView) layout.getChildren().get(k)).getY() + 30 - 8);
-                        ((ImageView) layout.getChildren().get(k)).setImage(new Image("file:mcircle.png"));
+                        ((ImageView) layout.getChildren().get(k)).setImage(new Image("file:imgs/mcircle.png"));
                         break;
                     }
                 }
@@ -273,19 +273,19 @@ public class Driver extends Application {
                         for (int l = 0; l < layout.getChildren().size(); l++) {
                             if (layout.getChildren().get(l) instanceof ImageView) {
                                 if (((ImageView) layout.getChildren().get(l)).getImage().getUrl()
-                                        .compareTo("file:bluepick.png") == 0) {
+                                        .compareTo("file:imgs/bluepick.png") == 0) {
                                     ((ImageView) layout.getChildren().get(l))
                                             .setX(((ImageView) layout.getChildren().get(l)).getX() + 15 - 8);
                                     ((ImageView) layout.getChildren().get(l))
                                             .setY(((ImageView) layout.getChildren().get(l)).getY() + 30 - 8);
-                                    ((ImageView) layout.getChildren().get(l)).setImage(new Image("file:mcircle.png"));
+                                    ((ImageView) layout.getChildren().get(l)).setImage(new Image("file:imgs/mcircle.png"));
                                 }
                             }
                         }
                         for (int l = 0; l < layout.getChildren().size(); l++) {
                             if (layout.getChildren().get(l) instanceof ImageView) {
                                 if (((ImageView) layout.getChildren().get(l))
-                                        .getImage().getUrl().compareTo("file:mcircle.png") == 0) {
+                                        .getImage().getUrl().compareTo("file:imgs/mcircle.png") == 0) {
                                     if (((ImageView) layout.getChildren().get(l)).getX() + 8 == table[k].vertix.xie
                                             && ((ImageView) layout.getChildren().get(l)).getY()
                                                     + 8 == table[k].vertix.yie) {
@@ -294,7 +294,7 @@ public class Driver extends Application {
                                         ((ImageView) layout.getChildren().get(l))
                                                 .setY(((ImageView) layout.getChildren().get(l)).getY() + 8 - 30);
                                         ((ImageView) layout.getChildren().get(l))
-                                                .setImage(new Image("file:bluepick.png"));
+                                                .setImage(new Image("file:imgs/bluepick.png"));
                                         break;
                                     }
                                 } else {
@@ -303,7 +303,7 @@ public class Driver extends Application {
                                                     + 30 == table[k].vertix.yie) {
 
                                         ((ImageView) layout.getChildren().get(l))
-                                                .setImage(new Image("file:bluepick.png"));
+                                                .setImage(new Image("file:imgs/bluepick.png"));
                                         sourceCb.setValue(" ");
                                         break;
                                     }
@@ -320,7 +320,7 @@ public class Driver extends Application {
             for (int f = 0; f < layout.getChildren().size(); f++) {
                 if (layout.getChildren().get(f) instanceof ImageView) {
                     if (((ImageView) layout.getChildren().get(f))
-                            .getImage().getUrl().compareTo("file:mcircle.png") == 0) {
+                            .getImage().getUrl().compareTo("file:imgs/mcircle.png") == 0) {
                         ((ImageView) layout.getChildren().get(f)).setImage(new Image("file:reddpick.png"));
                     }
                 }
