@@ -1,0 +1,251 @@
+50 200
+Algeria 36.7538 3.0588
+Argentina -34.6037 -58.3816
+Australia -35.2802 149.1310
+Bolivia -19.0353 -65.2592
+Brazil -15.7975 -47.8919
+Canada 45.4215 -75.6972
+Chad 12.1348 15.0557
+Chile -33.4489 -70.6693
+China 39.9042 116.4074
+Colombia 4.7110 -74.0721
+Congo -4.4419 15.2663
+Egypt 30.0444 31.2357
+Finland 60.1699 24.9384
+France 48.8566 2.3522
+Germany 52.5200 13.4050
+Greenland 64.1743 -51.7373
+Iceland 64.1466 -21.9426
+India 28.6139 77.2090
+Indonesia -6.2088 106.8456
+Iran 35.7219 51.3347
+Iraq 33.3152 44.3661
+Ireland 53.3498 -6.2603
+Italy 41.9028 12.4964
+Japan 35.6762 139.6503
+Jordan 31.9539 35.9106
+Kazakhstan 51.1605 71.4704
+Libya 32.8872 13.1913
+Madagascar -18.8792 47.5079
+Mauritania 18.0735 -15.9582
+Mexico 19.4326 -99.1332
+Mongolia 47.8864 106.9057
+Morocco 33.9716 -6.8498
+Niger 13.5116 2.1254
+Nigeria 9.0765 7.3986
+Norway 59.9139 10.7522
+Oman 23.5880 58.3829
+Peru -12.0464 -77.0428
+Philippines 14.5995 120.9842
+Poland 52.2297 21.0122
+Russia 55.7558 37.6173
+Saudi 24.7136 46.6753
+Spain 40.4168 -3.7038
+Sudan 15.5007 32.5599
+Sweden 59.3293 18.0686
+Turkey 39.9334 32.8597
+UK 51.5072 -0.1276
+Ukraine 50.4501 30.5234
+US 38.9072 -77.0369
+Venezuela 10.4806 -66.9036
+Yemen 15.3694 44.1910
+Poland UK
+Nigeria India
+Oman China
+Mexico Algeria
+Turkey Russia
+Jordan Mongolia
+Italy Indonesia
+Brazil Congo
+Congo Yemen
+Peru Venezuela
+Venezuela Chile
+Algeria Japan
+Yemen UK
+China Kazakhstan
+Canada Iraq
+Japan Morocco
+Libya Congo
+Mexico Morocco
+Yemen Madagascar
+Congo Greenland
+Argentina Turkey
+Mauritania China
+Poland Ukraine
+Sweden Ireland
+UK Egypt
+Colombia Japan
+Sweden Iran
+Congo Sudan
+Yemen Chile
+Oman Indonesia
+Iraq Morocco
+Sudan Ireland
+Kazakhstan Chile
+Colombia Argentina
+Turkey Libya
+Colombia India
+Chad Kazakhstan
+Brazil Morocco
+Bolivia Madagascar
+Colombia Peru
+UK Chad
+Greenland Mauritania
+Iceland Norway
+Germany Turkey
+Colombia Saudi
+Egypt Niger
+Indonesia Argentina
+Kazakhstan Algeria
+Venezuela Sweden
+Russia Argentina
+Venezuela Italy
+Venezuela Colombia
+US Peru
+Venezuela Congo
+China Morocco
+Colombia Brazil
+Oman Finland
+Bolivia Sweden
+Colombia Brazil
+Sudan Spain
+Congo Iran
+UK Brazil
+Finland Sudan
+Chile China
+Russia Morocco
+Saudi India
+Argentina Oman
+Iraq Turkey
+India Japan
+Turkey UK
+India Finland
+Morocco UK
+Sweden Kazakhstan
+Spain Bolivia
+Australia Kazakhstan
+Mongolia Norway
+Japan Greenland
+Indonesia Ireland
+Niger US
+Iran Ukraine
+UK Greenland
+Saudi Argentina
+France Morocco
+Argentina Bolivia
+Algeria Australia
+Mongolia India
+Bolivia Mauritania
+Poland Iran
+Sweden Bolivia
+Germany Poland
+Japan Sudan
+Libya Brazil
+Brazil Finland
+Ukraine Iraq
+Chad Japan
+Algeria Sweden
+Chad Libya
+Finland Congo
+Iraq Oman
+Peru Saudi
+Chad Mauritania
+Ireland Algeria
+China Italy
+Colombia Saudi
+Mexico Ukraine
+Ukraine Egypt
+Chile UK
+China Turkey
+Morocco Libya
+Kazakhstan Germany
+Jordan Egypt
+Argentina China
+Niger Yemen
+Argentina Egypt
+Turkey Colombia
+Bolivia Iceland
+Niger Egypt
+Peru Australia
+Chad Ukraine
+Russia Spain
+Sweden US
+Algeria Congo
+Sweden Sudan
+Sweden Sudan
+Philippines France
+Congo Bolivia
+Argentina Congo
+Congo Mongolia
+UK Brazil
+Spain US
+Australia Iran
+Argentina Algeria
+Algeria Libya
+Indonesia Turkey
+Spain Ukraine
+Turkey Peru
+Colombia Sweden
+Nigeria Yemen
+Iceland Iraq
+Russia Saudi
+Turkey Peru
+Poland Russia
+Ireland Japan
+Jordan Iceland
+Ireland Brazil
+Chad Indonesia
+Madagascar Philippines
+Sudan Poland
+Mexico Italy
+Indonesia Morocco
+Sudan UK
+Ukraine Philippines
+Brazil Russia
+Niger Japan
+Algeria France
+Bolivia Peru
+Japan Finland
+Peru Japan
+Libya China
+Italy Chile
+Turkey France
+Ukraine Philippines
+Argentina Egypt
+Iceland Indonesia
+Brazil Japan
+Peru Argentina
+Bolivia Argentina
+Congo China
+Brazil UK
+Mexico Greenland
+Poland Japan
+Colombia Venezuela
+Venezuela France
+Oman Venezuela
+Mexico Ukraine
+Peru Nigeria
+Mexico Chad
+Egypt Sweden
+Yemen Ireland
+Iran Canada
+Italy Canada
+Egypt Norway
+Indonesia Russia
+Indonesia Bolivia
+Chad Indonesia
+Japan Egypt
+Greenland Poland
+Kazakhstan Argentina
+Nigeria Venezuela
+Norway Mauritania
+Canada Oman
+Russia Yemen
+Philippines Chile
+Madagascar Argentina
+Spain Australia
+Germany Philippines
+Japan Morocco
+Indonesia Russia
+Jordan Madagascar
+Bolivia Iran
