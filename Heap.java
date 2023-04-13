@@ -2,17 +2,9 @@ public class Heap {
     public Node[] arr;
     public int size = 0;
 
-    // ===============================================================================
     public Heap(int sizie) {
         arr = new Node[sizie + 1];
-        //buildHeap();
     }
-
-    //public void buildHeap() {
-    //    for (int k = 1; k < arr.length; k++) {
-    //        arr[k] = new Node();
-      //  }
-   // }
 
     public boolean isEmpty() {
         if (arr[1] == null) {

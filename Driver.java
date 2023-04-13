@@ -100,7 +100,7 @@ public class Driver extends Application {
         vcount = Integer.parseInt(temp[0]);
         adjcount = Integer.parseInt(temp[1]);
         Node[] table = new Node[vcount];
-        String[] typeop = new String[vcount + 1]; 
+        String[] typeop = new String[vcount + 1];
         typeop[0] = " ";
         for (int i = 0; i < vcount; i++) {
             temp = input.nextLine().split(" ");
@@ -199,7 +199,8 @@ public class Driver extends Application {
                                             .setX(((ImageView) layout.getChildren().get(l)).getX() + 15 - 8);
                                     ((ImageView) layout.getChildren().get(l))
                                             .setY(((ImageView) layout.getChildren().get(l)).getY() + 30 - 8);
-                                    ((ImageView) layout.getChildren().get(l)).setImage(new Image("file:imgs/mcircle.png"));
+                                    ((ImageView) layout.getChildren().get(l))
+                                            .setImage(new Image("file:imgs/mcircle.png"));
                                 }
                             }
                         }
@@ -278,7 +279,8 @@ public class Driver extends Application {
                                             .setX(((ImageView) layout.getChildren().get(l)).getX() + 15 - 8);
                                     ((ImageView) layout.getChildren().get(l))
                                             .setY(((ImageView) layout.getChildren().get(l)).getY() + 30 - 8);
-                                    ((ImageView) layout.getChildren().get(l)).setImage(new Image("file:imgs/mcircle.png"));
+                                    ((ImageView) layout.getChildren().get(l))
+                                            .setImage(new Image("file:imgs/mcircle.png"));
                                 }
                             }
                         }
@@ -431,7 +433,7 @@ public class Driver extends Application {
                 }
             } else {
                 if ((result[1] + 30) > 360 - (g * 90)) {
-                    result[1] += ((g * 5) - (( result[1]) / 45));
+                    result[1] += ((g * 5) - ((result[1]) / 45));
                     break;
                 }
             }

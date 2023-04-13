@@ -4,7 +4,6 @@ import javafx.scene.Group;
 import javafx.scene.shape.Line;
 
 public class Arrow extends Group {
-
     private final Line line;
 
     public Arrow() {
@@ -22,46 +21,34 @@ public class Arrow extends Group {
             double ey = getEndY();
             double sx = getStartX();
             double sy = getStartY();
-
             arrow1.setEndX(ex);
             arrow1.setEndY(ey);
             arrow2.setEndX(ex);
             arrow2.setEndY(ey);
-
             if (ex == sx && ey == sy) {
-                // arrow parts of length 0
                 arrow1.setStartX(ex);
                 arrow1.setStartY(ey);
                 arrow2.setStartX(ex);
                 arrow2.setStartY(ey);
             } else {
-                double factor = arrowLength / Math.hypot(sx-ex, sy-ey);
-                double factorO = arrowWidth / Math.hypot(sx-ex, sy-ey);
-
-                // part in direction of main line
+                double factor = arrowLength / Math.hypot(sx - ex, sy - ey);
+                double factorO = arrowWidth / Math.hypot(sx - ex, sy - ey);
                 double dx = (sx - ex) * factor;
                 double dy = (sy - ey) * factor;
-
-                // part ortogonal to main line
                 double ox = (sx - ex) * factorO;
                 double oy = (sy - ey) * factorO;
-
                 arrow1.setStartX(ex + dx - oy);
                 arrow1.setStartY(ey + dy + ox);
                 arrow2.setStartX(ex + dx + oy);
                 arrow2.setStartY(ey + dy - ox);
             }
         };
-
-        // add updater to properties
         startXProperty().addListener(updater);
         startYProperty().addListener(updater);
         endXProperty().addListener(updater);
         endYProperty().addListener(updater);
         updater.invalidated(null);
     }
-
-    // start/end properties
 
     public final void setStartX(double value) {
         line.setStartX(value);
