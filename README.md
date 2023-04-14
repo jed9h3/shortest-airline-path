@@ -2,6 +2,8 @@ A tool for finding the shortest airline path between any 2 cities in a list of c
 
 "number of cities" "number of adjacents"
 
+#cities
+
 "city1" "longitude" "latitude"
 
 "city2" "longitude" "latitude"
@@ -9,6 +11,8 @@ A tool for finding the shortest airline path between any 2 cities in a list of c
 "city3" "longitude" "latitude"
 
 ....
+
+#adjacents
 
 city1 city2
 
