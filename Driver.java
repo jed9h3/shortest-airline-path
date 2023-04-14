@@ -116,10 +116,8 @@ public class Driver extends Application {
             typeop[i + 1] = temp[0];
             table[i] = (new Node(tcity));
             pickie.setOnMouseClicked(ei -> {
-                if ((sourceCb.getSelectionModel().isEmpty() || sourceCb.getValue().compareTo(" ") == 0)
-                        || (targetCb.getSelectionModel().isEmpty() || targetCb.getValue().compareTo(" ") == 0)
-                        || (pickie.getImage().getUrl().compareTo("file:imgs/mcircle.png") != 0)) {
-                    if (sourceCb.getSelectionModel().isEmpty() || sourceCb.getValue().compareTo(" ") == 0) {
+                if ((pickie.getImage().getUrl().compareTo("file:imgs/mcircle.png") == 0)) {
+                    if ((sourceCb.getSelectionModel().isEmpty() || sourceCb.getValue().compareTo(" ") == 0)) {
                         for (int u = 0; u < table.length; u++) {
                             if ((table[u].vertix.xie) == (pickie.getX() + 8)
                                     && (table[u].vertix.yie) == (pickie.getY() + 8)) {
@@ -127,22 +125,21 @@ public class Driver extends Application {
                                 break;
                             }
                         }
-                    } else if (pickie.getImage().getUrl().compareTo("file:imgs/redpick.png") == 0) {
-                        sourceCb.setValue(" ");
-                    } else {
-                        if (targetCb.getSelectionModel().isEmpty() || targetCb.getValue().compareTo(" ") == 0) {
-                            for (int u = 0; u < table.length; u++) {
-                                if ((table[u].vertix.xie) == (pickie.getX() + 8)
-                                        && (table[u].vertix.yie) == (pickie.getY() + 8)) {
-                                    targetCb.setValue(table[u].vertix.name);
-                                    break;
-                                }
+                    } else if ((targetCb.getSelectionModel().isEmpty() || targetCb.getValue().compareTo(" ") == 0)) {
+                        for (int u = 0; u < table.length; u++) {
+                            if ((table[u].vertix.xie) == (pickie.getX() + 8)
+                                    && (table[u].vertix.yie) == (pickie.getY() + 8)) {
+                                targetCb.setValue(table[u].vertix.name);
+                                break;
                             }
-                        } else {
-                            targetCb.setValue(" ");
                         }
                     }
+                } else if ((pickie.getImage().getUrl().compareTo("file:imgs/redpick.png") == 0)) {
+                    sourceCb.setValue(" ");
+                } else {
+                    targetCb.setValue(" ");
                 }
+
             });
         }
         ObservableList<String> items = FXCollections.observableArrayList(typeop);
@@ -460,14 +457,6 @@ public class Driver extends Application {
             }
         }
         return result;
-    }
-
-    public static double calculateDistanceb(double lat1, double lat2, double lon1, double lon2) {
-        double side1 = (lat1 - lat2) * 111.1;
-        double side2 = (lon1 - lon2) * 111.1 * Math.cos(Math.toRadians(lat1));
-        side1 = Math.pow(side1, 2);
-        side2 = Math.pow(side2, 2);
-        return Math.sqrt(side1 + side2);
     }
 
     public static double calculateDistance(City l1, City l2) {
